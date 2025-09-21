@@ -10536,3 +10536,322 @@ OSError: [Errno 48] Address already in use
 [0m13:53:57.380148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dcbe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dcbd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1bb6b0>]}
 [0m13:53:57.380524 [debug] [MainThread]: Flushing usage events
 [0m13:53:57.521733 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:01:20.183494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c123b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d137c50>]}
+
+
+============================== 18:01:20.194192 | 5bef4d4d-552b-4419-a941-f245d760301d ==============================
+[0m18:01:20.194192 [info ] [MainThread]: Running with dbt=1.10.11
+[0m18:01:20.194502 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'fail_fast': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'printer_width': '80', 'profiles_dir': '/Users/nate/.dbt', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/nate/Desktop/dbt_project/logs', 'indirect_selection': 'eager', 'quiet': 'False', 'invocation_command': 'dbt docs generate', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'use_colors': 'True', 'version_check': 'True', 'empty': 'None'}
+[0m18:01:20.279714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c44bbb0>]}
+[0m18:01:20.301566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfbf350>]}
+[0m18:01:20.302137 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m18:01:20.344875 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m18:01:20.421571 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:01:20.421889 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models/marts/rpt_loan_summary.sql
+[0m18:01:20.541476 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m18:01:20.543488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df59750>]}
+[0m18:01:20.589912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df62d50>]}
+[0m18:01:20.590162 [info ] [MainThread]: Found 1 seed, 4 models, 2 data tests, 434 macros
+[0m18:01:20.590307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e01a510>]}
+[0m18:01:20.591213 [info ] [MainThread]: 
+[0m18:01:20.591416 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:01:20.591537 [info ] [MainThread]: 
+[0m18:01:20.591740 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:01:20.593285 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt_dev_nate_dbt_dev_staging'
+[0m18:01:20.637379 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_staging"
+[0m18:01:20.637578 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_staging: BEGIN
+[0m18:01:20.637698 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:01:21.051814 [debug] [ThreadPool]: SQL status: BEGIN in 0.414 seconds
+[0m18:01:21.052061 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_staging"
+[0m18:01:21.052197 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_staging: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_dev_nate_dbt_dev_staging"} */
+select
+      'dbt_dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'nate_dbt_dev_staging'
+    union all
+    select
+      'dbt_dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'nate_dbt_dev_staging'
+    union all
+    select
+      'dbt_dev' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'nate_dbt_dev_staging'
+  
+[0m18:01:21.289324 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.237 seconds
+[0m18:01:21.292301 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_staging: ROLLBACK
+[0m18:01:21.333234 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_staging: Close
+[0m18:01:21.334185 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_dev_nate_dbt_dev_staging, now list_dbt_dev_nate_dbt_dev_raw)
+[0m18:01:21.338735 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_raw"
+[0m18:01:21.338997 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_raw: BEGIN
+[0m18:01:21.339302 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:01:21.346908 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m18:01:21.347032 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_raw"
+[0m18:01:21.347144 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_raw: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_dev_nate_dbt_dev_raw"} */
+select
+      'dbt_dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'nate_dbt_dev_raw'
+    union all
+    select
+      'dbt_dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'nate_dbt_dev_raw'
+    union all
+    select
+      'dbt_dev' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'nate_dbt_dev_raw'
+  
+[0m18:01:21.351128 [debug] [ThreadPool]: SQL status: SELECT 21 in 0.004 seconds
+[0m18:01:21.352929 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_raw: ROLLBACK
+[0m18:01:21.353490 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_raw: Close
+[0m18:01:21.354089 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_dev_nate_dbt_dev_raw, now list_dbt_dev_nate_dbt_dev_marts)
+[0m18:01:21.358937 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_marts"
+[0m18:01:21.359312 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_marts: BEGIN
+[0m18:01:21.359581 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:01:21.368021 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m18:01:21.368421 [debug] [ThreadPool]: Using postgres connection "list_dbt_dev_nate_dbt_dev_marts"
+[0m18:01:21.368711 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_marts: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_dbt_dev_nate_dbt_dev_marts"} */
+select
+      'dbt_dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'nate_dbt_dev_marts'
+    union all
+    select
+      'dbt_dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'nate_dbt_dev_marts'
+    union all
+    select
+      'dbt_dev' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'nate_dbt_dev_marts'
+  
+[0m18:01:21.371698 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.003 seconds
+[0m18:01:21.374093 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_marts: ROLLBACK
+[0m18:01:21.374625 [debug] [ThreadPool]: On list_dbt_dev_nate_dbt_dev_marts: Close
+[0m18:01:21.377816 [debug] [MainThread]: Using postgres connection "master"
+[0m18:01:21.378014 [debug] [MainThread]: On master: BEGIN
+[0m18:01:21.378123 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:01:21.383997 [debug] [MainThread]: SQL status: BEGIN in 0.006 seconds
+[0m18:01:21.384116 [debug] [MainThread]: Using postgres connection "master"
+[0m18:01:21.384281 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m18:01:21.395642 [debug] [MainThread]: SQL status: SELECT 6 in 0.011 seconds
+[0m18:01:21.397778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5bef4d4d-552b-4419-a941-f245d760301d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3e4bb0>]}
+[0m18:01:21.397987 [debug] [MainThread]: On master: ROLLBACK
+[0m18:01:21.398282 [debug] [MainThread]: On master: Close
+[0m18:01:21.399830 [debug] [Thread-1 (]: Began running node seed.dbt_project.newzealand_banking_loan_applications
+[0m18:01:21.400053 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_dev_nate_dbt_dev_marts, now seed.dbt_project.newzealand_banking_loan_applications)
+[0m18:01:21.400355 [debug] [Thread-1 (]: Began compiling node seed.dbt_project.newzealand_banking_loan_applications
+[0m18:01:21.403953 [debug] [Thread-1 (]: Began executing node seed.dbt_project.newzealand_banking_loan_applications
+[0m18:01:21.404279 [debug] [Thread-1 (]: Finished running node seed.dbt_project.newzealand_banking_loan_applications
+[0m18:01:21.404643 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_nz_loan_applications
+[0m18:01:21.404836 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_project.newzealand_banking_loan_applications, now model.dbt_project.stg_nz_loan_applications)
+[0m18:01:21.404992 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_nz_loan_applications
+[0m18:01:21.406702 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_nz_loan_applications"
+[0m18:01:21.407590 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_nz_loan_applications
+[0m18:01:21.407864 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_nz_loan_applications
+[0m18:01:21.408166 [debug] [Thread-1 (]: Began running node model.dbt_project.dim_loan_applications
+[0m18:01:21.408376 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_nz_loan_applications, now model.dbt_project.dim_loan_applications)
+[0m18:01:21.408538 [debug] [Thread-1 (]: Began compiling node model.dbt_project.dim_loan_applications
+[0m18:01:21.409734 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.dim_loan_applications"
+[0m18:01:21.410145 [debug] [Thread-1 (]: Began executing node model.dbt_project.dim_loan_applications
+[0m18:01:21.410415 [debug] [Thread-1 (]: Finished running node model.dbt_project.dim_loan_applications
+[0m18:01:21.410567 [debug] [Thread-1 (]: Began running node model.dbt_project.fct_loan_application
+[0m18:01:21.410738 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.dim_loan_applications, now model.dbt_project.fct_loan_application)
+[0m18:01:21.410921 [debug] [Thread-1 (]: Began compiling node model.dbt_project.fct_loan_application
+[0m18:01:21.412120 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.fct_loan_application"
+[0m18:01:21.412710 [debug] [Thread-1 (]: Began executing node model.dbt_project.fct_loan_application
+[0m18:01:21.413039 [debug] [Thread-1 (]: Finished running node model.dbt_project.fct_loan_application
+[0m18:01:21.413220 [debug] [Thread-1 (]: Began running node test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959
+[0m18:01:21.413404 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.fct_loan_application, now test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959)
+[0m18:01:21.413572 [debug] [Thread-1 (]: Began compiling node test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959
+[0m18:01:21.418635 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959"
+[0m18:01:21.419155 [debug] [Thread-1 (]: Began executing node test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959
+[0m18:01:21.419418 [debug] [Thread-1 (]: Finished running node test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959
+[0m18:01:21.419568 [debug] [Thread-1 (]: Began running node test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980
+[0m18:01:21.419726 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project.not_null_dim_loan_applications_loan_id.d8a98ef959, now test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980)
+[0m18:01:21.419862 [debug] [Thread-1 (]: Began compiling node test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980
+[0m18:01:21.422733 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980"
+[0m18:01:21.423091 [debug] [Thread-1 (]: Began executing node test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980
+[0m18:01:21.423331 [debug] [Thread-1 (]: Finished running node test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980
+[0m18:01:21.423478 [debug] [Thread-1 (]: Began running node model.dbt_project.rpt_loan_summary
+[0m18:01:21.423644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project.unique_dim_loan_applications_loan_id.74113b1980, now model.dbt_project.rpt_loan_summary)
+[0m18:01:21.423838 [debug] [Thread-1 (]: Began compiling node model.dbt_project.rpt_loan_summary
+[0m18:01:21.425183 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.rpt_loan_summary"
+[0m18:01:21.425676 [debug] [Thread-1 (]: Began executing node model.dbt_project.rpt_loan_summary
+[0m18:01:21.425906 [debug] [Thread-1 (]: Finished running node model.dbt_project.rpt_loan_summary
+[0m18:01:21.426368 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:01:21.426524 [debug] [MainThread]: Connection 'model.dbt_project.rpt_loan_summary' was properly closed.
+[0m18:01:21.427152 [debug] [MainThread]: Command end result
+[0m18:01:21.461884 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nate/Desktop/dbt_project/target/manifest.json
+[0m18:01:21.464238 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nate/Desktop/dbt_project/target/semantic_manifest.json
+[0m18:01:21.467913 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/nate/Desktop/dbt_project/target/run_results.json
+[0m18:01:21.470264 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m18:01:21.470385 [info ] [MainThread]: Building catalog
+[0m18:01:21.473737 [debug] [ThreadPool]: Acquiring new postgres connection 'dbt_dev.information_schema'
+[0m18:01:21.476656 [debug] [ThreadPool]: Using postgres connection "dbt_dev.information_schema"
+[0m18:01:21.476778 [debug] [ThreadPool]: On dbt_dev.information_schema: BEGIN
+[0m18:01:21.476882 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:01:21.484604 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m18:01:21.484911 [debug] [ThreadPool]: Using postgres connection "dbt_dev.information_schema"
+[0m18:01:21.485099 [debug] [ThreadPool]: On dbt_dev.information_schema: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "dbt_dev.information_schema"} */
+
+    
+    
+
+    select
+        'dbt_dev' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('nate_dbt_dev_marts') and
+           upper(tbl.relname) = upper('fct_loan_application')) or (upper(sch.nspname) = upper('nate_dbt_dev_raw') and
+           upper(tbl.relname) = upper('newzealand_banking_loan_applications')) or (upper(sch.nspname) = upper('nate_dbt_dev_marts') and
+           upper(tbl.relname) = upper('rpt_loan_summary')) or (upper(sch.nspname) = upper('nate_dbt_dev_staging') and
+           upper(tbl.relname) = upper('stg_nz_loan_applications')) or (upper(sch.nspname) = upper('nate_dbt_dev_marts') and
+           upper(tbl.relname) = upper('dim_loan_applications')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m18:01:21.501240 [debug] [ThreadPool]: SQL status: SELECT 112 in 0.016 seconds
+[0m18:01:21.503483 [debug] [ThreadPool]: On dbt_dev.information_schema: ROLLBACK
+[0m18:01:21.503817 [debug] [ThreadPool]: On dbt_dev.information_schema: Close
+[0m18:01:21.510197 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/nate/Desktop/dbt_project/target/catalog.json
+[0m18:01:21.521367 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/nate/Desktop/dbt_project/target/manifest.json
+[0m18:01:21.522120 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/nate/Desktop/dbt_project/target/semantic_manifest.json
+[0m18:01:21.522244 [info ] [MainThread]: Catalog written to /Users/nate/Desktop/dbt_project/target/catalog.json
+[0m18:01:21.634354 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 1.4901453, "process_in_blocks": "0", "process_kernel_time": 0.209949, "process_mem_max_rss": "138035200", "process_out_blocks": "0", "process_user_time": 0.96929}
+[0m18:01:21.634783 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:01:21.634722 after 1.49 seconds
+[0m18:01:21.634991 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:01:21.635144 [debug] [MainThread]: Connection 'dbt_dev.information_schema' was properly closed.
+[0m18:01:21.635325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cecf650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e293b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e293a10>]}
+[0m18:01:21.635534 [debug] [MainThread]: Flushing usage events
+[0m18:01:22.117944 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:01:23.307233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10816fb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934bc50>]}
+
+
+============================== 18:01:23.310483 | 55a08a00-07b8-4f16-934b-2788114c19a7 ==============================
+[0m18:01:23.310483 [info ] [MainThread]: Running with dbt=1.10.11
+[0m18:01:23.310771 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'version_check': 'True', 'target_path': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/nate/.dbt', 'write_json': 'True', 'warn_error': 'None', 'empty': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'partial_parse': 'True', 'debug': 'False', 'no_print': 'None', 'introspect': 'True', 'quiet': 'False', 'printer_width': '80', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/nate/Desktop/dbt_project/logs', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m18:01:23.385167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55a08a00-07b8-4f16-934b-2788114c19a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108663bb0>]}
+[0m18:01:23.408887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '55a08a00-07b8-4f16-934b-2788114c19a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091d7460>]}
+[0m18:01:23.686086 [error] [MainThread]: Encountered an error:
+[Errno 48] Address already in use
+[0m18:01:23.690296 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/Users/nate/Desktop/dbt_project/.venv/lib/python3.13/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 473, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 48] Address already in use
+
+[0m18:01:23.692298 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.41899842, "process_in_blocks": "0", "process_kernel_time": 0.109619, "process_mem_max_rss": "114737152", "process_out_blocks": "0", "process_user_time": 0.644828}
+[0m18:01:23.692658 [debug] [MainThread]: Command `dbt docs serve` failed at 18:01:23.692581 after 0.42 seconds
+[0m18:01:23.692930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109443e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109443d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098fb6b0>]}
+[0m18:01:23.693146 [debug] [MainThread]: Flushing usage events
+[0m18:01:23.848568 [debug] [MainThread]: An error was encountered while trying to flush usage events

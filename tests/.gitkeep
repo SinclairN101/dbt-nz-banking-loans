@@ -1,12 +1,16 @@
 # dbt build artifacts
 target/
-dbt_modules/
 dbt_packages/
+dbt_modules/
 logs/
 
-# Python venv
+# Python venv and cache
 .venv/
 __pycache__/
+*.pyc
 
 # MacOS junk
 .DS_Store
+
+# VS Code settings
+.vscode/
