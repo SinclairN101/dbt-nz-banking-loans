@@ -1,0 +1,12 @@
+# dbt build artifacts
+target/
+dbt_modules/
+dbt_packages/
+logs/
+
+# Python venv
+.venv/
+__pycache__/
+
+# MacOS junk
+.DS_Store

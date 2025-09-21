@@ -1,0 +1,8 @@
+# Ensure SQL, YAML, and Markdown are counted in GitHub Linguist
+*.sql linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.md linguist-detectable=true
+
+# Ignore auto-generated dbt target folder for language stats
+target/* linguist-vendored
