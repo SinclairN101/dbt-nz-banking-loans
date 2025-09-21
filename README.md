@@ -66,12 +66,10 @@ I transformed the dataset into a layered analytics warehouse with clearly define
 </p>
 
 
-## 🔍 Analysis & Dashboard
+### 🔍 Analysis & Dashboard
 
 To showcase the value of the transformed data, I built a Metabase dashboard directly on top of the dbt models.  
 This dashboard provides both a high-level snapshot of the loan portfolio and deeper risk insights.
-
----
 
 ### 📊 Portfolio Snapshot
 The top row shows key metrics at a glance:  
