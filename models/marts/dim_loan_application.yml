@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: dim_loan_applications
+    description: "Dimension table with descriptive attributes for loan applications and applicants."
+    columns:
+      - name: loan_id
+        description: "{{ doc('loan_id') }}"
+        tests: 
+          - not_null
+          - unique
+      - name: customer_age
+        description: "{{ doc('customer_age') }}"
+      - name: customer_gender
+        description: "{{ doc('customer_gender') }}"
+      - name: customer_region
+        description: "{{ doc('customer_region') }}"
+      - name: employment_status
+        description: "{{ doc('employment_status') }}"
+      - name: home_ownership
+        description: "{{ doc('home_ownership') }}"
+      - name: loan_application_type
+        description: "{{ doc('loan_application_type') }}"
+      - name: loan_purpose
+        description: "{{ doc('loan_purpose') }}"
+      - name: credit_grade
+        description: "{{ doc('credit_grade') }}"
+      - name: credit_sub_grade
+        description: "{{ doc('credit_sub_grade') }}"
+      - name: loan_term_months
+        description: "{{ doc('loan_term_months') }}"
+      - name: application_date
+        description: "{{ doc('application_date') }}"
+      - name: issue_date
+        description: "{{ doc('issue_date') }}"
+      - name: first_payment_date
+        description: "{{ doc('first_payment_date') }}"

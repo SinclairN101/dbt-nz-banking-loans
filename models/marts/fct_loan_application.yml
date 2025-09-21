@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: fct_loan_performance
+    description: "Fact table containing loan amounts, risk measures, performance metrics, and boolean outcomes."
+    columns:
+      - name: loan_id
+        description: "{{ doc('loan_id') }}"
+        tests:
+          - not_null
+          - unique
+      - name: loan_amount
+        description: "{{ doc('loan_amount') }}"
+      - name: gross_annual_income
+        description: "{{ doc('gross_annual_income') }}"
+      - name: declared_income
+        description: "{{ doc('declared_income') }}"
+      - name: verified_income
+        description: "{{ doc('verified_income') }}"
+      - name: credit_score
+        description: "{{ doc('credit_score') }}"
+      - name: interest_rate
+        description: "{{ doc('interest_rate') }}"
+      - name: credit_utilization
+        description: "{{ doc('credit_utilization') }}"
+      - name: revolving_balance
+        description: "{{ doc('revolving_balance') }}"
+      - name: debt_to_income_ratio
+        description: "{{ doc('debt_to_income_ratio') }}"
+      - name: num_open_accounts
+        description: "{{ doc('num_open_accounts') }}"
+      - name: delinquencies_past_2yrs
+        description: "{{ doc('delinquencies_past_2yrs') }}"
+      - name: credit_inquiries_6m
+        description: "{{ doc('credit_inquiries_6m') }}"
+      - name: funding_days
+        description: "{{ doc('funding_days') }}"
+      - name: ip_fraud_risk_score
+        description: "{{ doc('ip_fraud_risk_score') }}"
+      - name: device_changes_30d
+        description: "{{ doc('device_changes_30d') }}"
+      - name: income_mismatch_ratio
+        description: "{{ doc('income_mismatch_ratio') }}"
+      - name: is_document_mismatch
+        description: "{{ doc('is_document_mismatch') }}"
+      - name: is_loan_default
+        description: "{{ doc('is_loan_default') }}"
+      - name: is_fraud
+        description: "{{ doc('is_fraud') }}"

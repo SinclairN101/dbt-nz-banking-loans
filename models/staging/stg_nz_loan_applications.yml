@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: stg_nz_loan_applications
+    description: "Cleaned and standardized staging model for New Zealand banking loan applications."
+    columns:
+      - name: loan_id
+        description: "{{ doc('loan_id') }}"
+      - name: customer_age
+        description: "{{ doc('customer_age') }}"
+      - name: customer_gender
+        description: "{{ doc('customer_gender') }}"
+      - name: total_employment_years
+        description: "{{ doc('total_employment_years') }}"
+      - name: current_employer_years
+        description: "{{ doc('current_employer_years') }}"
+      - name: gross_annual_income
+        description: "{{ doc('gross_annual_income') }}"
+      - name: declared_income
+        description: "{{ doc('declared_income') }}"
+      - name: verified_income
+        description: "{{ doc('verified_income') }}"
+      - name: credit_score
+        description: "{{ doc('credit_score') }}"
+      - name: loan_amount
+        description: "{{ doc('loan_amount') }}"
+      - name: loan_purpose
+        description: "{{ doc('loan_purpose') }}"
+      - name: interest_rate
+        description: "{{ doc('interest_rate') }}"
+      - name: credit_utilization
+        description: "{{ doc('credit_utilization') }}"
+      - name: revolving_balance
+        description: "{{ doc('revolving_balance') }}"
+      - name: debt_to_income_ratio
+        description: "{{ doc('debt_to_income_ratio') }}"
+      - name: customer_region
+        description: "{{ doc('customer_region') }}"
+      - name: employment_status
+        description: "{{ doc('employment_status') }}"
+      - name: home_ownership
+        description: "{{ doc('home_ownership') }}"
+      - name: loan_application_type
+        description: "{{ doc('loan_application_type') }}"
+      - name: credit_grade
+        description: "{{ doc('credit_grade') }}"
+      - name: credit_sub_grade
+        description: "{{ doc('credit_sub_grade') }}"
+      - name: application_date
+        description: "{{ doc('application_date') }}"
+      - name: issue_date
+        description: "{{ doc('issue_date') }}"
+      - name: first_payment_date
+        description: "{{ doc('first_payment_date') }}"
+      - name: num_open_accounts
+        description: "{{ doc('num_open_accounts') }}"
+      - name: delinquencies_past_2yrs
+        description: "{{ doc('delinquencies_past_2yrs') }}"
+      - name: credit_inquiries_6m
+        description: "{{ doc('credit_inquiries_6m') }}"
+      - name: loan_term_months
+        description: "{{ doc('loan_term_months') }}"
+      - name: ip_fraud_risk_score
+        description: "{{ doc('ip_fraud_risk_score') }}"
+      - name: device_changes_30d
+        description: "{{ doc('device_changes_30d') }}"
+      - name: income_mismatch_ratio
+        description: "{{ doc('income_mismatch_ratio') }}"
+      - name: funding_days
+        description: "{{ doc('funding_days') }}"
+      - name: is_document_mismatch
+        description: "{{ doc('is_document_mismatch') }}"
+      - name: is_loan_default
+        description: "{{ doc('is_loan_default') }}"
+      - name: is_fraud
+        description: "{{ doc('is_fraud') }}"

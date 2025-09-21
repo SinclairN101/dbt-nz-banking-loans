@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: rpt_loan_summary
+    description: "Reporting model that provides portfolio-level loan performance metrics such as counts, averages, and default rates."
+    columns:
+      - name: total_loans
+        description: "{{ doc('total_loans') }}"
+      - name: total_loan_amount
+        description: "{{ doc('total_loan_amount') }}"
+      - name: avg_loan_amount
+        description: "{{ doc('avg_loan_amount') }}"
+      - name: avg_interest_rate
+        description: "{{ doc('avg_interest_rate') }}"
+      - name: avg_debt_to_income_ratio
+        description: "{{ doc('avg_debt_to_income_ratio') }}"
+      - name: avg_funding_days
+        description: "{{ doc('avg_funding_days') }}"
+      - name: total_defaults
+        description: "{{ doc('total_defaults') }}"
+      - name: default_rate_pct
+        description: "{{ doc('default_rate_pct') }}"

@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "dbt_dev"."nate_dbt_dev_raw"."sales_reports";
+    -- dbt seed --
+    
+          insert into "dbt_dev"."nate_dbt_dev_raw"."sales_reports" ("group_by", "display", "title", "filter_row_source", "default") values
+          (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+      
+
+;
+  
